@@ -1,0 +1,325 @@
+.frame {
+	margin: 50 50px;
+	position: relative;
+}
+
+/* 顔 */
+.frame .face {
+    position: absolute;
+    width: 90px;
+	height: 90px;
+	background: #000;
+}
+
+.frame .face::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 80px;
+	height: 80px;
+	background: #fff;
+}
+
+/* 両目 */
+.frame .face .left-eye {
+    position: absolute;
+    top: 32px;
+    left: 20px;
+    width: 7px;
+	height: 7px;
+	background: #000;
+}
+
+.frame .face .right-eye {
+    position: absolute;
+    top: 32px;
+    left: 60px;
+    width: 7px;
+	height: 7px;
+	background: #000;
+}
+
+/* 左耳 */
+.frame .face .left-ear {
+    position: absolute;
+    top: -25px;
+    left: -20px;
+    width: 40px;
+	height: 50px;
+	background: #000;
+}
+
+.frame .face .left-ear .inside {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    width: 10px;
+	height: 15px;
+	background: #fff;
+}
+
+.frame .face .left-ear .left-outside {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+	height: 40px;
+	background: #fff;
+}
+
+.frame .face .left-ear .right-outside {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 15px;
+	height: 20px;
+	background: #fff;
+}
+
+/* 右耳 */
+.frame .face .right-ear {
+    position: absolute;
+    top: -25px;
+    left: 65px;
+    width: 50px;
+	height: 45px;
+	background: #000;
+}
+
+.frame .face .right-ear .inside {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    width: 15px;
+	height: 10px;
+	background: #fff;
+}
+
+.frame .face .right-ear .left-outside {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+	height: 20px;
+	background: #fff;
+}
+
+.frame .face .right-ear .right-outside {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    width: 20px;
+	height: 35px;
+	background: #fff;
+}
+
+/* 鼻 */
+.frame .face .nose {
+	position: absolute;
+	top: 55px;
+	left: -40px;
+	width: 65px;
+	height: 35px;
+	background: #000;
+}
+
+.frame .face .nose .inside {
+	position: absolute;
+    top: 5px;
+    left: 45px;
+	width: 15px;
+	height: 25px;
+	background: #fff;
+}
+
+.frame .face .nose .left-outside {
+	position: absolute;
+    top: 15px;
+    left: 5px;
+	width: 35px;
+	height: 15px;
+	background: #fff;
+}
+
+.frame .face .nose .right-outside {
+	position: absolute;
+    top: 5px;
+    left: 30px;
+	width: 10px;
+	height: 25px;
+	background: #fff;
+}
+
+/* 首 */
+.frame .body .neck {
+    position: absolute;
+    top: 60px;
+	left: 70px;
+	width: 25px;
+	height: 30px;
+    background: #000;
+}
+
+.frame .body .neck::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 20px;
+    background: #fff;
+}
+
+/* 左半身 */
+.frame .body .left-body {
+    position: absolute;
+    top: 85px;
+	left: 70px;
+	width: 25px;
+	height: 55px;
+    background: #000;
+}
+
+.frame .body .left-body::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+	left: 5px;
+	width: 20px;
+	height: 45px;
+    background: #fff;
+}
+
+/* 右半身 */
+.frame .body .right-body {
+    position: absolute;
+    top: 60px;
+	left: 90px;
+	width: 135px;
+	height: 80px;
+    background: #000;
+}
+
+.frame .body .right-body::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+	width: 130px;
+	height: 70px;
+    background: #fff;
+}
+
+/* 左前足 */
+.frame .body .left-body .left-paw {
+    position: absolute;
+    top: 55px;
+	left: 5px;
+	width: 25px;
+	height: 45px;
+    background: #000;
+}
+
+.frame .body .left-body .left-paw::before {
+    position: absolute;
+    content: "";
+	left: 5px;
+	width: 15px;
+	height: 40px;
+    background: #fff;
+}
+
+/* 右前足 */
+.frame .body .left-body .right-paw {
+    position: absolute;
+    top: 55px;
+	left: 35px;
+	width: 25px;
+	height: 45px;
+    background: #000;
+}
+
+.frame .body .left-body .right-paw::before {
+    position: absolute;
+    content: "";
+	left: 5px;
+	width: 15px;
+	height: 40px;
+    background: #fff;
+}
+
+/* 左後ろ足 */
+.frame .body .right-body .left-leg {
+    position: absolute;
+    top: 80px;
+	left: 75px;
+	width: 25px;
+	height: 45px;
+    background: #000;
+}
+
+.frame .body .right-body .left-leg::before {
+    position: absolute;
+    content: "";
+	left: 5px;
+	width: 15px;
+	height: 40px;
+    background: #fff;
+}
+
+/* 右後ろ足 */
+.frame .body .right-body .right-leg {
+    position: absolute;
+    top: 80px;
+	left: 105px;
+	width: 25px;
+	height: 45px;
+    background: #000;
+}
+
+.frame .body .right-body .right-leg::before {
+    position: absolute;
+    content: "";
+	left: 5px;
+	width: 15px;
+	height: 40px;
+    background: #fff;
+}
+
+/* 尻尾 */
+.frame .body .right-body .tail {
+    position: absolute;
+    top: -10px;
+	left: 105px;
+	width: 65px;
+	height: 30px;
+    transform: rotate(-20deg);
+    background: #000;
+}
+
+.frame .body .right-body .tail::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+	left: 5px;
+    width: 55px;
+	height: 20px;
+    background: #fff;
+}
+
+/* 線 */
+.frame .body .right-body .horizon-line {
+    position: absolute;
+    left: 105px;
+	width: 30px;
+	height: 5px;
+    background: #000;
+}
+
+.frame .body .right-body .vertical-line {
+    position: absolute;
+    left: 130px;
+	width: 5px;
+	height: 30px;
+    background: #000;
+}
